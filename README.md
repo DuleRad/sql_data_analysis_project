@@ -16,3 +16,28 @@ Analyzing global population data using SQL is the focus of the project, covering
 This project uses data from the Kaggle dataset:
 
 - Dataset Link: [WorldPopulation Dataset](https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset)
+
+## Schema
+
+'''sql
+Table: dbo.world_population
+
+Columns:
+- Rank: TINYINT
+- CCA3: NVARCHAR(50)
+- Country_Territory: NVARCHAR(50) [Primary Key]
+- Capital: NVARCHAR(50)
+- Continent: NVARCHAR(50)
+- _2022_Population: INT
+- _2020_Population: INT
+- _2015_Population: INT
+- _2010_Population: INT
+- _2000_Population: INT
+- _1990_Population: INT
+- _1980_Population: INT
+- _1970_Population: INT
+- Area_km: INT
+- Density_per_km: FLOAT
+- Growth_Rate: FLOAT
+- World_Population_Percentage: FLOAT
+'''
