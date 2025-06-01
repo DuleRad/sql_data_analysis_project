@@ -19,25 +19,26 @@ This project uses data from the Kaggle dataset:
 
 ## Schema
 
-'''sql
-Table: dbo.world_population
+```sql
+CREATE TABLE dbo.world_population (
+    Rank TINYINT NOT NULL,
+    CCA3 NVARCHAR(50) NOT NULL,
+    Country_Territory NVARCHAR(50) NOT NULL,
+    Capital NVARCHAR(50) NOT NULL,
+    Continent NVARCHAR(50) NOT NULL,
+    _2022_Population INT NOT NULL,
+    _2020_Population INT NOT NULL,
+    _2015_Population INT NOT NULL,
+    _2010_Population INT NOT NULL,
+    _2000_Population INT NOT NULL,
+    _1990_Population INT NOT NULL,
+    _1980_Population INT NOT NULL,
+    _1970_Population INT NOT NULL,
+    Area_km INT NOT NULL,
+    Density_per_km FLOAT NOT NULL,
+    Growth_Rate FLOAT NOT NULL,
+    World_Population_Percentage FLOAT NOT NULL,
 
-Columns:
-- Rank: TINYINT
-- CCA3: NVARCHAR(50)
-- Country_Territory: NVARCHAR(50) [Primary Key]
-- Capital: NVARCHAR(50)
-- Continent: NVARCHAR(50)
-- _2022_Population: INT
-- _2020_Population: INT
-- _2015_Population: INT
-- _2010_Population: INT
-- _2000_Population: INT
-- _1990_Population: INT
-- _1980_Population: INT
-- _1970_Population: INT
-- Area_km: INT
-- Density_per_km: FLOAT
-- Growth_Rate: FLOAT
-- World_Population_Percentage: FLOAT
-'''
+    CONSTRAINT PK_world_population PRIMARY KEY CLUSTERED (Country_Territory ASC)
+);
+```
