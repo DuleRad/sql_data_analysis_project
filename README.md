@@ -1,1 +1,1 @@
-# sql_data_analysis_project
+# Data Analysis of the world population dataset using SQL
