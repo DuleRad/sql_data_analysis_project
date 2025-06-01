@@ -15,4 +15,4 @@ Analyzing global population data using SQL is the focus of the project, covering
 
 This project uses data from the Kaggle dataset:
 
-- Dataset Link: {https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset}
+- Dataset Link: [WorldPopulation Dataset]{https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset}
